@@ -1,0 +1,64 @@
+#calendar {
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  #calendar-header {
+    background-color: #eee;
+    color: #333;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  #calendar-header button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  #calendar-header button:hover {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  #calendar-body {
+    background-color: #fff;
+  }
+  
+  #calendar-body td {
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+  }
+  
+  .today {
+    background-color: #03A9F4;
+    color: #fff;
+  }
+  
+  .weekday {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
