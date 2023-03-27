@@ -5,6 +5,19 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>380AK</title>
 	  <style>
+		  #myDiv {
+			width: 80%; /* Set a default width */
+			margin: 0 auto; /* Center the div horizontally */
+			background-color: lightblue;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		@media (max-width: 767px) { /* Apply styles for screens smaller than 768px */
+			#myDiv {
+				width: 100%; /* Set the width to 100% */
+			}
+		}
 		body {
 			display: flex;
 			align-items: center;
@@ -37,7 +50,7 @@
   <body>
     <p>Site launched since: 22.3.2023</p>
 	<p>Days since launch: <span id="days-since-launch"></span> days</p>
-    <div id="calendar">
+    <div id="myDiv">
       <div id="month-and-year"></div>
       <table id="calendar-table">
         <thead>
