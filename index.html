@@ -3,8 +3,27 @@
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Days Since Site Launch</title>
+	<script>
+		window.onload = function() {
+			// Set the launch date (in milliseconds)
+			var launchDate = new Date("2023-03-22").getTime();
+
+			// Get the current date (in milliseconds)
+			var currentDate = new Date().getTime();
+
+			// Calculate the number of days since launch
+			var daysSinceLaunch = Math.floor((currentDate - launchDate) / (1000 * 60 * 60 * 24));
+
+			// Update the HTML element with the days since launch
+			document.getElementById("days-since-launch").innerHTML = daysSinceLaunch;
+		};
+	</script>
   </head>
+  
   <body>
+    <p>Site launched since: 22.3.2023</p>
+	<p>Days since launch: <span id="days-since-launch"></span> days</p>
     <div id="calendar">
       <div id="month-and-year"></div>
       <table id="calendar-table">
